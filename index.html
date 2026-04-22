@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Digital | Growth & Performance</title>
+    <style>
+        /* General Styles */
+        :root {
+            --primary: #2563eb;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --accent: #38bdf8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+
+        header {
+            background: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 100px 5%;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background: white;
+            color: var(--primary);
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            color: var(--primary);
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 5%;
+            background: #fff;
+            text-align: center;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: var(--dark);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">ELITE DIGITAL</div>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Data-Driven Growth for Your Business</h1>
+        <p>Specializing in full-funnel performance and precision advertising.</p>
+        <a href="#contact" class="btn">Get a Free Audit</a>
+    </section>
+
+    <section class="services" id="services">
+        <div class="card">
+            <h3>Performance Marketing</h3>
+            <p>Optimizing ROI through data-backed Google and Social Media campaigns.</p>
+        </div>
+        <div class="card">
+            <h3>Programmatic Ads</h3>
+            <p>Using advanced automation to place ads in front of the right audience at the right time.</p>
+        </div>
+        <div class="card">
+            <h3>Content Strategy</h3>
+            <p>Creating high-converting creative briefs and social media messaging.</p>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Scale Your Business Today</h2>
+        <form>
+            <label>Name</label>
+            <input type="text" placeholder="Your Name" required>
+            <label>Email</label>
+            <input type="email" placeholder="email@example.com" required>
+            <label>Message</label>
+            <textarea rows="5" placeholder="How can we help?"></textarea>
+            <button type="submit" class="btn" style="background: var(--primary); color: white; border: none; width: 100%; cursor: pointer;">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Elite Digital Marketing. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
